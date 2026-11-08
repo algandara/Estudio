@@ -8,8 +8,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="Aves y Plantas">
   <title>Estudio</title>
-  <link rel="stylesheet" href="css/styles.css?v=2">
-  <link rel="stylesheet" href="css/desktop.css?v=2">
+  <link rel="stylesheet" href="css/styles.css?v=4">
+  <link rel="stylesheet" href="css/desktop.css?v=5">
 </head>
 <body>
   <div class="card">
@@ -184,11 +184,27 @@
           </span>
           <span class="choice-arrow">➔</span>
         </button>
+        <button class="study-choice choice-guide-bird" onclick="renderIdGuide('bird')">
+          <span class="choice-icon">🔎</span>
+          <span class="choice-text">
+            <strong>Guía de identificación de aves</strong>
+            <small>Aves que se confunden y cómo distinguirlas</small>
+          </span>
+          <span class="choice-arrow">➔</span>
+        </button>
         <button class="study-choice choice-plant" onclick="renderStudySection('plant')">
           <span class="choice-icon">🌿</span>
           <span class="choice-text">
             <strong>Árboles y arbustos</strong>
             <small id="choicePlantCount"></small>
+          </span>
+          <span class="choice-arrow">➔</span>
+        </button>
+        <button class="study-choice choice-guide" onclick="renderIdGuide('plant')">
+          <span class="choice-icon">🔎</span>
+          <span class="choice-text">
+            <strong>Guía de identificación de plantas</strong>
+            <small>Plantas que se confunden y cómo distinguirlas</small>
           </span>
           <span class="choice-arrow">➔</span>
         </button>
@@ -314,7 +330,10 @@
 
     loadScript(`temas/${TOPIC_ID}/data.js?v=3`)
   .then(() => loadScript("js/quiz.js?v=5"))
-  .then(() => loadScript("js/study.js?v=3"))
+  .then(() => loadScript("js/study.js?v=4"))
+  .then(() => loadScript("js/guide.js?v=3"))
+  .then(() => loadScript(`temas/${TOPIC_ID}/guia.js?v=1`).catch(() => {}))
+  .then(() => loadScript(`temas/${TOPIC_ID}/guia-aves.js?v=1`).catch(() => {}))
   .then(() => loadScript("js/games.js?v=3"))
   .then(() => loadScript("js/stats.js?v=3"))
       .then(initApp)

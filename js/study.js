@@ -57,7 +57,7 @@ function renderStudySection(type) {
             </div>
           </td>
           <td style="width: 38%;">
-            <div class="species-de">${sp.de[0]}</div>
+            <div class="species-de">${sp.de[0]}${sp.de.length > 1 ? ` <span style="font-weight:400; color:#64748b; font-size:0.85em;">(${sp.de.slice(1).join(", ")})</span>` : ""}</div>
             <div class="species-es">${sp.es}</div>
             <div style="font-size:11px; color:#0284c7; font-weight:600; margin-top:3px; line-height:1.25;">
               <em>${sp.literal}</em>
