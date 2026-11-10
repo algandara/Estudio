@@ -18,7 +18,7 @@ const identificationGuide = {
     {
       titulo: "Frutos negros o azul oscuro",
       porQue: "Son arbustos que de lejos se parecen: todos tienen bayas oscuras. Se separan por la hoja, la forma del racimo y las espinas.",
-      especies: ["Ligustrum vulgare", "Cornus sanguinea", "Prunus padus", "Rubus fruticosus", "Frangula alnus", "Prunus spinosa"],
+      especies: ["Ligustrum vulgare", "Cornus sanguinea", "Prunus padus", "Rubus fruticosus", "Frangula alnus", "Prunus spinosa", "Sambucus nigra"],
       filas: [
         { rasgo: "Hojas", valores: [
           "Opuestas (de dos en dos), estrechas, enteras y lisas.",
@@ -26,7 +26,8 @@ const identificationGuide = {
           "Alternas, ovaladas, con dientes finos.",
           "Compuestas: 3 a 5 folíolos con dientes gruesos.",
           "Alternas, ovaladas, sin dientes y con nervios paralelos.",
-          "Alternas, pequeñas y ovaladas, con dientes finos."
+          "Alternas, pequeñas y ovaladas, con dientes finos.",
+          "Compuestas: 5 a 7 folíolos con dientes finos."
         ] },
         { rasgo: "Frutos", valores: [
           "Negros y brillantes en racimo piramidal corto.",
@@ -34,7 +35,8 @@ const identificationGuide = {
           "Negros y redondos en racimos largos y colgantes, como uvas.",
           "Negros, formados por muchas gotitas agrupadas.",
           "Primero rojos y luego negros; rojos y negros a la vez en la misma rama.",
-          "Azul oscuro con polvo blanco, sin racimo y muy ácidos."
+          "Azul oscuro con polvo blanco, sin racimo y muy ácidos.",
+          "Negros y brillantes en racimos planos y colgantes."
         ] },
         { rasgo: "Tallo o espinas", valores: [
           "Ramas lisas, sin espinas.",
@@ -42,7 +44,8 @@ const identificationGuide = {
           "Corteza oscura con lenticelas; sin espinas.",
           "Tallos arqueados con aguijones curvos.",
           "Sin espinas; corteza oscura con lenticelas claras.",
-          "Espinas rígidas, rectas y muy afiladas."
+          "Espinas rígidas, rectas y muy afiladas.",
+          "Médula blanca grande dentro de la rama; sin espinas."
         ] },
         { rasgo: "Pista decisiva", clave: true, valores: [
           "Racimo piramidal de bayas negras y hojas opuestas.",
@@ -50,7 +53,8 @@ const identificationGuide = {
           "Racimos colgantes muy largos. En primavera, flores blancas en racimo.",
           "Tallo arqueado con pinchos; el fruto parece una mora.",
           "Hojas sin dientes y frutos rojos que se vuelven negros.",
-          "Espinas rectas. Las flores blancas salen antes que las hojas."
+          "Espinas rectas. Las flores blancas salen antes que las hojas.",
+          "Hojas en pluma y médula blanca grande."
         ] }
       ]
     },
@@ -58,7 +62,7 @@ const identificationGuide = {
     {
       titulo: "Frutos rojos",
       porQue: "Muchas plantas de frutos rojos se parecen de lejos. Lo que las separa es cómo se agrupan las bayas y cómo son las hojas.",
-      especies: ["Lonicera xylosteum", "Sambucus racemosa", "Sorbus aucuparia", "Rosa canina", "Prunus avium", "Viburnum lantana"],
+      especies: ["Lonicera xylosteum", "Sambucus racemosa", "Sorbus aucuparia", "Rosa canina", "Prunus avium", "Viburnum lantana", "Euonymus europaeus", "Cornus mas", "Crataegus monogyna", "Hippophae rhamnoides", "Daphne mezereum"],
       filas: [
         { rasgo: "Hojas", valores: [
           "Opuestas, simples, ovaladas y con pelillos finos.",
@@ -66,7 +70,12 @@ const identificationGuide = {
           "Compuestas en pluma, con 9 o más folíolos dentados.",
           "Compuestas en pluma, con 5 a 7 folíolos de dientes finos.",
           "Simples, grandes, ovaladas y con dientes.",
-          "Simples, muy arrugadas y con el envés cubierto de lana."
+          "Simples, muy arrugadas y con el envés cubierto de lana.",
+          "Opuestas, simples, ovaladas y finamente aserradas.",
+          "Opuestas, simples, ovaladas, sin dientes y con nervios muy curvados.",
+          "Simples, con 3 a 7 lóbulos profundos y dientes irregulares.",
+          "Alternas, estrechas y alargadas, plateadas por el envés.",
+          "Alternas, estrechas, enteras y agrupadas en el extremo de las ramas."
         ] },
         { rasgo: "Frutos", valores: [
           "Rojos y translúcidos, siempre de dos en dos soldados por la base.",
@@ -74,7 +83,12 @@ const identificationGuide = {
           "Rojo-naranja, en racimo plano y denso.",
           "Escaramujos rojos, alargados y carnosos.",
           "Cerezas rojas sueltas o de dos en dos, en rabos largos.",
-          "Rojos al principio y negros después, en ramillete plano."
+          "Rojos al principio y negros después, en ramillete plano.",
+          "Cápsulas rosa-rojas de cuatro lóbulos, con semillas naranjas dentro.",
+          "Drupas rojas alargadas, en racimos cortos junto a las hojas.",
+          "Pequeños frutos rojos tipo manzanita, en racimos cortos.",
+          "Naranja brillante, muy pequeños y apretados a lo largo de la rama.",
+          "Rojos y carnosos, pegados directamente a la rama, sin rabo."
         ] },
         { rasgo: "Tallo o espinas", valores: [
           "Ramas finas, sin espinas.",
@@ -82,7 +96,12 @@ const identificationGuide = {
           "Yemas negras aterciopeladas; corteza lisa y gris.",
           "Aguijones curvos y fuertes.",
           "Corteza brillante con lenticelas horizontales.",
-          "Ramas y hojas recubiertas de lana."
+          "Ramas y hojas recubiertas de lana.",
+          "Ramas verdes de cuatro ángulos, sin espinas.",
+          "Corteza que se desprende en placas, sin espinas.",
+          "Espinas rígidas y rectas en las ramas.",
+          "Espinas cortas en las ramas.",
+          "Ramas finas y flexibles, sin espinas."
         ] },
         { rasgo: "Pista decisiva", clave: true, valores: [
           "Dos bayas soldadas en la base.",
@@ -90,7 +109,12 @@ const identificationGuide = {
           "Muchos folíolos en pluma y racimo plano.",
           "Espinas curvas y flores rosas.",
           "Cereza suelta sobre rabo largo, no en racimo.",
-          "Hojas lanudas y frutos rojos que luego se vuelven negros."
+          "Hojas lanudas y frutos rojos que luego se vuelven negros.",
+          "Cápsula de cuatro picos y ramas de cuatro ángulos.",
+          "Flores amarillas antes que las hojas; drupas rojas alargadas.",
+          "Hojas con lóbulos profundos y espinas rectas.",
+          "Hojas plateadas por debajo y espinas en las ramas; frutos naranjas.",
+          "Fruto rojo pegado a la rama, sin rabo, y flores antes que las hojas."
         ] }
       ]
     },
